@@ -1,0 +1,33 @@
+{
+  "name": "raw-guid-converter",
+  "version": "0.0.1",
+  "description": "guid converter from raw database type to formated guid ",
+  "main": "lib/index.js",
+  "repository": "git@github.com:kanekotic/raw-guid-converter.git",
+  "author": "kanekotic <alvarojosepl@gmail.com>",
+  "license": "MIT",
+  "bin": {
+    "raw-to-guid": "bin/raw-to-guid.js"
+  },
+  "keywords": [
+    "command line",
+    "tool",
+    "dynamodb",
+    "batch",
+    "csv"
+  ],
+  "scripts": {
+    "test": "jest",
+    "test:dev": "jest --watchAll",
+    "test:cov": "jest --coverage"
+  },
+  "jest": {
+    "automock": false,
+    "testMatch": [
+      "**/test/**/*-test.js"
+    ]
+  },
+  "devDependencies": {
+    "jest": "23.1.0"
+  }
+}
