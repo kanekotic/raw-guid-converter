@@ -9,8 +9,10 @@ program
   .version(packageJson.version)
 
 program
-  .command('fromRaw <rawGuid>')
+  .command('fromRaw [rawGuids...]')
   .description('converts raw guid to string format')
-  .action((rawGuid) => console.log(index.convertRaw(rawGuid)))
+  .action((guids) => 
+  guids.forEach(guid => console.log(index.convertRaw(guid)))
+)
   
   program.parse(process.argv)

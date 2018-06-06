@@ -26,7 +26,7 @@ describe('some', () => {
     })
 
     it("is has command with correct description", () => {
-        expect(commander.command.mock.calls[0][0]).toBe("fromRaw <rawGuid>")
+        expect(commander.command.mock.calls[0][0]).toBe("fromRaw [rawGuids...]")
         expect(commander.description.mock.calls[0][0]).toBe("converts raw guid to string format")
         expect(commander.action.mock.calls[0][0]).toBeInstanceOf(Function)
     })
