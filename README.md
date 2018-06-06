@@ -30,6 +30,8 @@ convert-guid fromRaw 4630880E6D0B3640AB446C6FB3C44FE3
 #0e883046-0b6d-4036-ab44-6c6fb3c44fe3
 ```
 
+you can pass multiple guids to convert all of them in one go
+
 ### Logo
 ---------------------------
 
