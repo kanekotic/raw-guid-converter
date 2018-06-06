@@ -1,6 +1,6 @@
 {
   "name": "raw-guid-converter",
-  "version": "0.0.1",
+  "version": "0.0.2",
   "description": "guid converter from raw database type to formated guid ",
   "main": "lib/index.js",
   "repository": "git@github.com:kanekotic/raw-guid-converter.git",
@@ -19,7 +19,12 @@
   "scripts": {
     "test": "jest",
     "test:dev": "jest --watchAll",
-    "test:cov": "jest --coverage"
+    "test:cov": "jest --coverage",
+    "deploy:major": "yarn version --major",
+    "deploy:minor": "yarn version --minor",
+    "deploy:patch": "yarn version --patch",
+    "preversion": "yarn test",
+    "postversion": "git push && git push --tags"
   },
   "jest": {
     "automock": false,
