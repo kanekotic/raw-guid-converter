@@ -36,6 +36,7 @@
     "jest": "23.1.0"
   },
   "dependencies": {
+    "buffer": "^5.1.0",
     "commander": "2.15.1"
   }
 }
