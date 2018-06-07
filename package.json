@@ -1,6 +1,6 @@
 {
   "name": "raw-guid-converter",
-  "version": "0.0.6",
+  "version": "0.0.7",
   "description": "guid converter from raw database type to formated guid ",
   "main": "lib/index.js",
   "repository": "git@github.com:kanekotic/raw-guid-converter.git",
