@@ -21,5 +21,20 @@ describe('raw to guid conversion', () => {
         })
         
     });
+
+    [
+        "aaa",
+        "111",
+    ].forEach(input => {
+        it(`${input} is not correct format throws error`, () => {
+            let err
+            try {
+                convert(input)
+            } catch (error) {
+                err = error
+            }
+            expect(err).toEqual("wrong format")
+        })
+    });
     
 })
