@@ -25,9 +25,15 @@ describe('some', () => {
         expect(commander.version.mock.calls[0][0]).toBe(packageJson.version)
     })
 
-    it("is has command with correct description", () => {
-        expect(commander.command.mock.calls[0][0]).toBe("fromRaw [rawGuids...]")
+    it("is has command to convert from raw with correct description", () => {
+        expect(commander.command.mock.calls[0][0]).toBe("fromRaw [guid...]")
         expect(commander.description.mock.calls[0][0]).toBe("converts raw guid to string format")
         expect(commander.action.mock.calls[0][0]).toBeInstanceOf(Function)
+    })
+
+    it("is has command to convert from string with correct description", () => {
+        expect(commander.command.mock.calls[1][0]).toBe("fromString [guid...]")
+        expect(commander.description.mock.calls[1][0]).toBe("converts string guid to raw format")
+        expect(commander.action.mock.calls[1][0]).toBeInstanceOf(Function)
     })
 })
