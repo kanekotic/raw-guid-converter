@@ -3,7 +3,7 @@ jest.mock('../../lib/guid-to-raw', () => jest.fn())
 
 const index = require('../../lib/index'),
     convertRaw = require('../../lib/raw-to-guid'),
-    convertGuid = require('../../lib/guid-to-raw')
+    convertString = require('../../lib/guid-to-raw')
 
     
 describe('index should export functions', () => {
@@ -11,6 +11,6 @@ describe('index should export functions', () => {
         expect(index.convertRaw).toEqual(convertRaw)
     })
     it('calls guid to raw in guidConvert', () => {
-        expect(index.convertGuid).toEqual(convertGuid)
+        expect(index.convertString).toEqual(convertString)
     })
 })

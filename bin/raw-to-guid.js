@@ -19,7 +19,7 @@ program
   .command('fromString [guid...]')
   .description('converts string guid to raw format')
   .action((guids) => 
-  guids.forEach(guid => console.log(index.convertRaw(guid)))
+  guids.forEach(guid => console.log(index.convertString(guid)))
 )
   
   program.parse(process.argv)
