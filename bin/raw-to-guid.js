@@ -4,7 +4,6 @@ const program = require('commander'),
   index = require('../lib/index'),
   packageJson = require('../package.json')
 
-
 program
   .version(packageJson.version)
 
