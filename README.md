@@ -1,5 +1,6 @@
 # ![logomakr_5c2oee](https://user-images.githubusercontent.com/3071208/41022709-abb95bd6-696a-11e8-8564-3ad7d43d44fb.png)
 [![Build Status](https://travis-ci.org/kanekotic/raw-guid-converter.svg?branch=v0.0.2)](https://travis-ci.org/kanekotic/raw-guid-converter)
+[![Coverage Status](https://coveralls.io/repos/github/kanekotic/raw-guid-converter/badge.svg?branch=master)](https://coveralls.io/github/kanekotic/raw-guid-converter?branch=master)
 [![GitHub license](https://img.shields.io/github/license/Naereen/StrapDown.js.svg)](https://github.com/Naereen/StrapDown.js/blob/master/LICENSE)
 [![Maintenance](https://img.shields.io/badge/Maintained%3F-yes-green.svg)](https://GitHub.com/Naereen/StrapDown.js/graphs/commit-activity)
 
