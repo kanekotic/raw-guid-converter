@@ -12,9 +12,8 @@
   "keywords": [
     "command line",
     "tool",
-    "dynamodb",
-    "batch",
-    "csv"
+    "guid",
+    "oracle"
   ],
   "scripts": {
     "test": "jest",
