@@ -3,7 +3,7 @@ sudo: false
 node_js:
   - node
 script:
-  - if [[ "${TRAVIS_EVENT_TYPE}" = "cron" ]]; then ./upgrade.sh; fi
+  - if [[ "${TRAVIS_EVENT_TYPE}" = "cron" ]]; then sh ./upgrade.sh; fi
   - yarn test:cov
 deploy:
   skip_cleanup: true
