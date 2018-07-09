@@ -1,9 +1,8 @@
 #!/bin/sh
-
-yarn upgrade:local || { echo 'upgrade failed' ; exit 1; }
-yarn test || { echo 'test failed' ; exit 1; }
-yarn deploy:patch || { echo 'deploy failed' ; exit 1; }
-
+set -e
+yarn upgrade:local 
+yarn test 
+yarn deploy:patch
 #git config --global user.email "travis@travis-ci.org"
 #git config --global user.name "Travis CI"
 
