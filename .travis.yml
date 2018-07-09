@@ -3,7 +3,7 @@ sudo: false
 node_js:
   - node
 script:
-  - if [[ "${TRAVIS_EVENT_TYPE}" = "cron" ]]; then yarn upgrade:local && yarn deploy:patch ; fi
+  - if [[ "${TRAVIS_EVENT_TYPE}" = "cron" ]]; git checkout master && then yarn upgrade:local && yarn deploy:patch ; fi
   - yarn test:cov
 deploy:
   skip_cleanup: true
