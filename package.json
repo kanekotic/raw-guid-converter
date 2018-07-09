@@ -33,6 +33,7 @@
     ]
   },
   "devDependencies": {
+    "coffee": "4.1.0",
     "coveralls": "3.0.2",
     "jest": "23.3.0"
   },
