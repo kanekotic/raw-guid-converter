@@ -4,14 +4,14 @@ set -e
 
 git config --global user.email "travis@travis-ci.org"
 git config --global user.name "Travis CI"
+git config remote.origin.url https://${GH_TOKEN}@github.com/${TRAVIS_REPO_SLUG}.git master >/dev/null 2>&1
 
 yarn upgrade --latest
 git add .
 git commit --allow-empty -m "updated dependencies"
 
 yarn test
-yarn deploy:patch >/dev/null 2>&1
+yarn deploy:patch
 
-git remote add origin-master https://${GH_TOKEN}@github.com/${TRAVIS_REPO_SLUG}.git >/dev/null 2>&1
-git push --quiet --set-upstream origin-master master
-git push --quiet --set-upstream origin-master master --tags
+git push --quiet master
+git push --quiet master --tags
