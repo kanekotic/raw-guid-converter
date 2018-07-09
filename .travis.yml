@@ -3,7 +3,7 @@ sudo: false
 node_js:
 - node
 script:
-- if [ "${TRAVIS_BRANCH}" = "UPGRADE" ]; then git checkout master && yarn upgrade:local && deploy:patch fi
+- if [ "${TRAVIS_BRANCH}" = "UPGRADE" ]; then; git checkout master && yarn upgrade:local && yarn deploy:patch; fi
 - yarn test:cov
 deploy:
   skip_cleanup: true
