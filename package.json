@@ -20,7 +20,7 @@
     "test:dev": "jest --watchAll",
     "test:cov": "jest --coverage && cat ./coverage/lcov.info | ./node_modules/coveralls/bin/coveralls.js",
     "push": "yarn test && git push",
-    "upgrade:local": "yarn upgrade --latest && git add . && git commit -m \"updated dependencies\"",
+    "upgrade:local": "yarn upgrade --latest && git add . && git commit --allow-empty -m \"updated dependencies\"",
     "deploy:major": "yarn version --major",
     "deploy:minor": "yarn version --minor",
     "deploy:patch": "yarn version --patch",
