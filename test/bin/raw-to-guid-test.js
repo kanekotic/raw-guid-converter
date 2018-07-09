@@ -40,6 +40,7 @@ const commander = require('commander'),
 
 describe('command line', () => {
     it("is version from package.json", () => {
+        throw ""
         expect(commander.version.mock.calls[0][0]).toBe(packageJson.version)
     })
 
