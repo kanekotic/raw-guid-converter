@@ -11,7 +11,7 @@ git add .
 git commit --allow-empty -m "updated dependencies"
 
 yarn test
-yarn --non-interactive deploy:patch 
+# yarn deploy:patch 
 
 git push --quiet master
 git push --quiet master --tags
