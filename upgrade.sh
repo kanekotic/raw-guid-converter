@@ -2,20 +2,18 @@
 
 set -e
 
-REPO= echo ${TRAVIS_REPO_SLUG} | cut -d "/" -f 2
-
-git clone https://${GH_TOKEN}@github.com/${TRAVIS_REPO_SLUG}.git
-cd ${REPO}
-git remote
 git config --global user.email "travis@travis-ci.org"
 git config --global user.name "Travis CI"
+
+git checkout -b master
 
 yarn upgrade --latest
 git add .
 git commit --allow-empty -m "updated dependencies"
 
 yarn test
-yarn deploy:patch
+# yarn deploy:patch 
 
-git push https://${GH_TOKEN}@github.com/${TRAVIS_REPO_SLUG}.git master >/dev/null 2>&1
-git push https://${GH_TOKEN}@github.com/${TRAVIS_REPO_SLUG}.git master --tags >/dev/null 2>&1
+git remote add origin-pages https://${GH_TOKEN}@github.com/MVSE-outreach/resources.git > /dev/null 2>&1
+git push --quiet --set-upstream origin-pages master
+git push --quiet --set-upstream origin-pages master --tags
