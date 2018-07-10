@@ -13,5 +13,5 @@ git commit --allow-empty -m "updated dependencies"
 yarn test
 # yarn deploy:patch 
 
-git push --quiet master
-git push --quiet master --tags
+git push --quiet master HEAD:master
+git push --quiet master HEAD:master --tags
