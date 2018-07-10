@@ -15,7 +15,7 @@ git add .
 git commit --allow-empty -m "updated dependencies [skip ci]"
 
 yarn test
-yarn version --patch
+YARN_FORCE_WINPTY=1 yarn version --patch
 
 git push --quiet origin-master master-local:master
 git push --quiet origin-master master-local:master --tags
