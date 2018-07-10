@@ -2,7 +2,7 @@
 
 set -e
 
-REPO= cut -d "/" -f 2 <<< ${TRAVIS_REPO_SLUG}
+REPO= echo ${TRAVIS_REPO_SLUG} | cut -d "/" -f 2
 
 git clone https://${GH_TOKEN}@github.com/${TRAVIS_REPO_SLUG}.git
 cd ${REPO}
