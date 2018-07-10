@@ -1,5 +1,7 @@
 language: node_js
 sudo: false
+env:
+  - CONTINUOUS_INTEGRATION=false
 node_js:
   - node
 script:
