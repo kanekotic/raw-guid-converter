@@ -38,7 +38,7 @@
     "jest": "23.4.0"
   },
   "dependencies": {
-    "buffer": "^5.1.0",
+    "buffer": "5.1.0",
     "commander": "2.16.0"
   }
 }
