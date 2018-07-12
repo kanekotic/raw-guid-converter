@@ -8,7 +8,6 @@ describe('cli', () => {
         ["6C6F59B2D4C5144AB7786A304CCB597F","B2596F6C-C5D4-4A14-B778-6A304CCB597F\n".toLowerCase()],
     ].forEach(guid => {
         it(`should convert ${guid[1]} string into ${guid[0]}`, done => {
-            console.log(executable)
             coffee.fork(executable, ['fromRaw', guid[0]])
                 .expect('stdout', guid[1])
                 .expect('code', 0)
