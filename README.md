@@ -1,5 +1,5 @@
 # ![logomakr_5c2oee](https://user-images.githubusercontent.com/3071208/41022709-abb95bd6-696a-11e8-8564-3ad7d43d44fb.png)
-[![Build Status](https://travis-ci.org/kanekotic/raw-guid-converter.svg?branch=v0.0.2)](https://travis-ci.org/kanekotic/raw-guid-converter)
+[![Build Status](https://travis-ci.org/kanekotic/raw-guid-converter.svg?branch=master)](https://travis-ci.org/kanekotic/raw-guid-converter)
 [![Coverage Status](https://coveralls.io/repos/github/kanekotic/raw-guid-converter/badge.svg?branch=master)](https://coveralls.io/github/kanekotic/raw-guid-converter?branch=master)
 [![npm](https://img.shields.io/npm/dt/raw-guid-converter.svg)](https://github.com/kanekotic/raw-guid-converter)
 [![GitHub license](https://img.shields.io/github/license/kanekotic/raw-guid-converter.svg)](https://github.com/kanekotic/raw-guid-converter/blob/master/LICENSE)
