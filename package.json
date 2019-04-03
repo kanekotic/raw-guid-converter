@@ -35,10 +35,10 @@
   "devDependencies": {
     "coffee": "5.2.1",
     "coveralls": "3.0.3",
-    "jest": "24.5.0"
+    "jest": "24.7.0"
   },
   "dependencies": {
     "buffer": "5.2.1",
-    "commander": "2.19.0"
+    "commander": "2.20.0"
   }
 }
