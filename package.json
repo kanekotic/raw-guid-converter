@@ -34,7 +34,7 @@
   },
   "devDependencies": {
     "coffee": "5.2.1",
-    "coveralls": "3.0.4",
+    "coveralls": "3.0.5",
     "jest": "24.8.0"
   },
   "dependencies": {
