@@ -727,10 +727,10 @@ code-point-at@^1.0.0:
   resolved "https://registry.yarnpkg.com/code-point-at/-/code-point-at-1.1.0.tgz#0d070b4d043a5bea33a2f1a40e2edb3d9a4ccf77"
   integrity sha1-DQcLTQQ6W+ozovGkDi7bPZpMz3c=
 
-coffee@5.2.1:
-  version "5.2.1"
-  resolved "https://registry.yarnpkg.com/coffee/-/coffee-5.2.1.tgz#e0946a3363c740017359141484b8805f1a780dd3"
-  integrity sha512-U2caAa5S0P1ez5/SeCmmG1ke5mG9n92zBvZvucErLokBDq3Vb0Ai3KpH2iv1svdO986bJqvF6dQRdvlFqP3ZmA==
+coffee@5.2.2:
+  version "5.2.2"
+  resolved "https://registry.yarnpkg.com/coffee/-/coffee-5.2.2.tgz#b6d91fba70ad5bb2c7913574e5ee5ed59257246e"
+  integrity sha512-c4taeiO96gqysv2zx6nIsw8cAyy7U+eC7TdvHh/kNE8DYDOi8GYWx141KG9NHG0TtSktxi4PpbMo2edp7SZQcA==
   dependencies:
     cross-spawn "^6.0.5"
     debug "^4.1.0"
@@ -1029,9 +1029,9 @@ estraverse@^4.2.0:
   integrity sha1-De4/7TH81GlhjOc0IJn8GvoL2xM=
 
 esutils@^2.0.2:
-  version "2.0.2"
-  resolved "https://registry.yarnpkg.com/esutils/-/esutils-2.0.2.tgz#0abf4f1caa5bcb1f7a9d8acc6dea4faaa04bac9b"
-  integrity sha1-Cr9PHKpbyx96nYrMbepPqqBLrJs=
+  version "2.0.3"
+  resolved "https://registry.yarnpkg.com/esutils/-/esutils-2.0.3.tgz#74d2eb4de0b8da1293711910d50775b9b710ef64"
+  integrity sha512-kVscqXk4OCp68SZ0dkgEKVi6/8ij300KBWTJq32P/dYeWTSwK41WyTxalN1eRmA5Z9UU/LX9D7FWSmV9SAYx6g==
 
 exec-sh@^0.3.2:
   version "0.3.2"
