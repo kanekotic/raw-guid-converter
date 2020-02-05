@@ -39,6 +39,6 @@
   },
   "dependencies": {
     "buffer": "5.4.3",
-    "commander": "4.1.0"
+    "commander": "4.1.1"
   }
 }
